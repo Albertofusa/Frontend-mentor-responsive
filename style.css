@@ -11,6 +11,8 @@
   --button-blue: #29376b;
   --soft-blue: #6abecd;
   --gray-letter: #7c7c7c;
+  --line-main: #dbe5e6;
+  --black: #000000;
 }
 
 html {
@@ -38,4 +40,75 @@ button {
 input {
   border: 0;
   outline: 0;
+}
+
+/*RESETEOS*/
+
+.nav__links {
+  display: none;
+}
+
+/*HEADER__NAV*/
+
+.header {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  background-color: var(--base-main);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 190px;
+}
+
+.nav__icons a {
+  font-size: 20px;
+  color: var(--black);
+}
+
+.nav__icons :nth-child(2) {
+  font-size: 20px;
+  padding-left: 1rem;
+}
+
+.nav__icons :nth-child(3) {
+  font-size: 25px;
+  padding-left: 1rem;
+}
+
+.line {
+  border: 1px solid var(--line-main);
+}
+
+/*SECTION__TWO__LINKS*/
+
+.nav__linkes {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--base-main);
+}
+
+.linkes__home {
+  padding: 2rem 1rem;
+  border-left: 2px solid var(--line-main);
+  border-right: 2px solid var(--line-main);
+}
+
+.linkes__home a {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--black);
 }
