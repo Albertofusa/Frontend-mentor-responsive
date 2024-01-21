@@ -21,6 +21,7 @@ html {
 
 body {
   font-family: sans-serif;
+  background-color: var(--base-main);
 }
 
 img {
@@ -55,7 +56,6 @@ input {
   max-width: 1200px;
   padding: 1rem 2rem;
   margin: 0 auto;
-  background-color: var(--base-main);
 }
 
 .navbar {
@@ -97,7 +97,6 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--base-main);
 }
 
 .linkes__home {
