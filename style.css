@@ -13,6 +13,7 @@
   --gray-letter: #7c7c7c;
   --line-main: #dbe5e6;
   --black: #000000;
+  --circle: #f0f4f4;
 }
 
 html {
@@ -163,7 +164,7 @@ input {
   gap: 2rem;
 }
 
-/*tabs*/
+/*TABS*/
 
 .tabs__content {
   width: 100%;
@@ -350,20 +351,116 @@ input {
   font-weight: 500;
 }
 
-/*information__content*/
+/*ARTICLES__CONTENT*/
 
-.information__content {
+.articles__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.articles__content__card {
   border: 1px solid var(--line-main);
   border-radius: 10px;
   background-color: white;
   padding: 1.5rem;
   text-align: center;
+  width: 100%;
 }
 
-.circle__information__content {
+.circle__articles__content {
   width: 100px;
   height: 100px;
   border: 1px solid var(--line-main);
   border-radius: 100%;
   margin: 0 auto;
+  background-color: var(--circle);
+  padding: 8px;
+  text-align: center;
 }
+
+.circle__articles__box {
+  border: 8px solid var(--line-main);
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle__articles__box--0 {
+  font-weight: 900;
+  font-size: 21px;
+  padding-bottom: 0.5rem;
+}
+
+.circle__articles__box--number {
+  font-size: 13px;
+  color: var(--gray-letter);
+}
+
+.articles__content__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.articles__content__title p:nth-child(1) {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.articles__content__title p:nth-child(2) {
+  color: orange;
+  font-size: 16px;
+}
+
+.articles__content__copy {
+  font-size: 14px;
+  color: var(--gray-letter);
+  padding-bottom: 1.5rem;
+}
+
+.articles__content__button {
+  background-color: var(--button-blue);
+}
+
+.articles__content__card__links {
+  text-align: left;
+  border: 1px solid var(--line-main);
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+.articles__card__title {
+  font-size: 16px;
+  padding-bottom: 0.5rem;
+}
+
+.articles__box__links {
+  border-bottom: 2px solid var(--line-main);
+  padding: 1rem 0;
+}
+
+.articles__box__links__last {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.articles__box__links a {
+  font-size: 13px;
+  color: var(--black);
+}
+
+.articles__box__links a:hover {
+  border-bottom: 1px solid black;
+}
+
+/*FOOTER*/
